@@ -136,7 +136,7 @@ namespace Slot
             isSlotPulled = false;
             slotRichag.transform.localScale = Vector3.one;
         
-            StartCoroutine(AutoSpinSlot());
+            // StartCoroutine(AutoSpinSlot());
         }
 
         private IEnumerator AutoSpinSlot()

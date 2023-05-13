@@ -4440,6 +4440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d194e0956c5d468eb152d210a693bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotScreen: {fileID: 363298554}
+  mainUI: {fileID: 1543817209}
   minSwipeDistance: 50
 --- !u!4 &1844277603
 Transform:

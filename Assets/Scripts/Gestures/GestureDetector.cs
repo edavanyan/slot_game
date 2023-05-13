@@ -1,9 +1,13 @@
+using Plugins.Demigiant.DOTween.Modules;
 using UnityEngine;
 
 namespace Gestures
 {
     public class GestureDetector : MonoBehaviour
     {
+        public RectTransform slotScreen;
+        public RectTransform mainUI;
+        
         public float minSwipeDistance = 50f; // Minimum swipe distance to register as a swipe
 
         private Vector2 _startPos;
@@ -85,14 +89,14 @@ namespace Gestures
 
         private void OnSwipeUp()
         {
-            Debug.Log("Swipe Up Detected");
-            // Implement your swipe up functionality here
+            slotScreen.DOAnchorPosY(2500, 0.25f);
+            mainUI.DOAnchorPosY(0, 0.25f);
         }
 
         private void OnSwipeDown()
         {
-            Debug.Log("Swipe Down Detected");
-            // Implement your swipe down functionality here
+            slotScreen.DOAnchorPosY(0, 0.25f);
+            mainUI.DOAnchorPosY(-2500, 0.25f);
         }
 
         private void OnSwipeLeft()
